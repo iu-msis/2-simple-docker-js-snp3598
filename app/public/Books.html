@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/decorations.css">
+
+  <title>Books</title>
+
+  <link rel="stylesheet" href="/css/site.css"></link>
+  </head>
+  <body>
+
+    <header>
+  <h1 class="booksheader">Books<h1>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+
+              <a href = "Index.html">Home</a> |
+              <a href = "About.html">About</a> |
+              <a href = "Books.html">Books</a> |
+
+                </div>
+     </nav>
+
+<table id='order_table' class=table>
+  <thead>
+    <tr>
+        <th> Title </th>
+        <th> Author</th>
+        <th> Year Published</th>
+        <th>Publisher</th>
+        <th>Page Count</th>
+          <th>MSRP</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td> The Hunger Games </td>
+          <td> Suzane Collins</td>
+          <td> 2008</td>
+          <td> Penguin </td>
+          <td>374</td>
+          <td> $12.99</td>
+        </tr>
+
+                          <tr>
+                            <td> Romeo & Juliet </td>
+                            <td> William Shakespear</td>
+                            <td> 1492</td>
+                            <td> Dogs </td>
+                            <td>800</td>
+                            <td> $1299.99</td>
+                          </tr>
+
+                                              <tr>
+                                                <td> Farenheit 451 </td>
+                                                <td>Ray Bradburn</td>
+                                                <td> 1962</td>
+                                                <td> Fire Co. </td>
+                                                <td>223</td>
+                                                <td> $8.99</td>
+                                              </tr>
+
+                                                      <tr>
+                                                        <td> Arthur's Eyes </td>
+                                                        <td> John Smith</td>
+                                                        <td> 1996</td>
+                                                        <td> Ardvark Publishing </td>
+                                                        <td>12</td>
+                                                        <td> $2.99</td>
+                                                      </tr>
+
+                                                                        <tr>
+                                                                          <td> The Giving Tree</td>
+                                                                          <td>Shell Silverston</td>
+                                                                          <td> 1985</td>
+                                                                          <td> Penguin </td>
+                                                                          <td>19</td>
+                                                                          <td> $7.99</td>
+                                                                        </tr>
+
+                                                                                  <tr>
+                                                                                    <td> Velocity 2.0 </td>
+                                                                                    <td> Dale Pollak</td>
+                                                                                    <td> 2004</td>
+                                                                                    <td> Keith Jezek </td>
+                                                                                    <td>188</td>
+                                                                                    <td> $25.99</td>
+                                                                                  </tr>
+                                                                                </tbody>
+
+<br>
+<br>
+<br>
+
+  </table>
+
+<div class = "row" id="pad">
+  <form>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Title</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1">
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlInput1">Author</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1">
+      <div class="form-group">
+
+        <label for="exampleFormControlInput1">Year Published</label>
+        <input type="number" class="form-control" id="exampleFormControlInput1">
+
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Publisher</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1">
+
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Page Count</label>
+            <input type="number" class="form-control" id="exampleFormControlInput1">
+            <div class="form-group">
+
+              <label for="exampleFormControlInput1">MSRP</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1">
+
+    </div>
+<button type="button" class="btn">Submit</button>
+  </form>
+    </div>
+
+
+
+
+
+  </body>
+    <script src='js/tablesort.min.js'></script>
+    <script>
+    new Tablesort(document.getElementById('order_table'));
+    </script>
+  </html>
