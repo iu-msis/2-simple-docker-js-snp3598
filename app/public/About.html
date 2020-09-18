@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -10,7 +11,6 @@
 
   <title>Index</title>
 
-  <link rel="stylesheet" href="/css/site.css"></link>
 </head>
 <body>
 
@@ -30,16 +30,20 @@
 <br>
 <br>
 <div>
-<img src = "img/Keith.jpg" alt="Keith" height="300"
+
 </div>
-<div>
-  <p>Name: Keith Walker<br>
-    Country:South Africa<br>
-    Birthday: 8/10/1987<br>
-    Age:33<br>
-    Email:<a href="mailto:KeithWalker10@yahoo.com"> KeithWalker10@yahoo.com</a>
+<div id='app'>
+  <a v-bind:href="photo"> <img v-bind:src="thumb">
+</a>
+  <h6>Name: {{name}}</h6>
+    <h6>Country: {{country}}</h6>
+    <h6>Birthday: {{birthday}}</h6>
+    <h6>Age: {{age}}</h6>
+    <h6>Email:<a :href="'mailto:' + email">{{email}}</a></h6>
+  </p>
 
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/data.app.js"></script>
 </body>
 </html>
