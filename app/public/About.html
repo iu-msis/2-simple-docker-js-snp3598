@@ -41,6 +41,10 @@
     <h6>Age: {{age}}</h6>
     <h6>Email:<a :href="'mailto:' + email">{{email}}</a></h6>
   </p>
+  <br>
+  <form v-on:submit.prevent="fetchUser">
+    <button>Get New User </button>
+  </form>
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
