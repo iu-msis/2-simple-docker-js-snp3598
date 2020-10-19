@@ -1,0 +1,4 @@
+MYSQL_DATABASE=spollak_demo
+MYSQL_HOST=spollak-demo.cdsk13u2jyy6.us-east-1.rds.amazonaws.com
+MYSQL_USER=user_name snpollak@iu.edu
+MYSQL_PASSWORD=password Toodles3598!
