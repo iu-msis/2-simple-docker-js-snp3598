@@ -43,7 +43,9 @@
 
             <form id="newCommentForm" v-on:submit.prevent="createComment()">
               <div>
-                <label for="comment"> Submit New Comment </label>
+              </br>
+            </br>
+                <label for="comment"> New Comment </label>
                 <input id="commentText" type="textarea" v-model="newComment.commentText" class="form-control">
               </div><br/>
               <input type="submit" value="Create New Comment" class="button" id="submitNewComment">
