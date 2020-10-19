@@ -1,4 +1,4 @@
-MYSQL_DATABASE=spollak-demo
-MYSQL_HOST=spollak-demo.cdsk13u2jyy6.us-east-1.rds.amazonaws.com
-MYSQL_USER=msisadmin
-MYSQL_PASSWORD=Toodles3598!
+MYSQL_DATABASE=msis
+MYSQL_HOST=msis.cdsk13u2jyy6.us-east-1.rds.amazonaws.com
+MYSQL_USER=admin
+MYSQL_PASSWORD=password
