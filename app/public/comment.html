@@ -25,7 +25,7 @@
      <div id="comments">
             <h1> Comments </h1>
 
-            <table>
+            <table id="commentTable">
                 <thead>
                 <tr>
                     <br>
@@ -35,16 +35,16 @@
                 </thead>
                 <tbody id="commentTableBody">
                     <tr v-for="c in commentList">
-                        <td class="td1">{{ c.id }}</td>
-                        <td class="td1">{{ c.commentText }}</td>
+                        <td>{{ c.id }}</td>
+                        <td>{{ c.commentText }}</td>
                     </tr>
                 </tbody>
             </table>
 
-            <form v-on:submit.prevent="createComment()">
+            <form id="newCommentForm" v-on:submit.prevent="createComment()">
               <div>
                 <label for="comment"> Submit New Comment </label>
-                <input type="textarea" v-model="newComment.commentText" class="form-control">
+                <input id="commentText" type="textarea" v-model="newComment.commentText" class="form-control">
               </div><br/>
               <input type="submit" value="Create New Comment" class="button" id="submitNewComment">
             </form>
